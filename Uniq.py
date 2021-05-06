@@ -1,7 +1,7 @@
-import sys
+import fileinput
 predchozi_radek = None
 pocitadlo = 0
-for radek in sys.stdin:
+for radek in fileinput.input():
     if predchozi_radek in (None, radek):
         pocitadlo += 1 
     else:
